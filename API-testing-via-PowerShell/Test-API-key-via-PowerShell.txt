@@ -1,0 +1,24 @@
+$secureApiKey = Read-Host "Enter your API key" -AsSecureString
+
+#####################################################################
+#####################################################################
+#####################################################################
+#
+#
+#  Copy and paste the above line FIRST to input the API key!!!!
+#
+#
+#####################################################################
+#####################################################################
+#####################################################################
+
+$apiKey = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
+    [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureApiKey))
+
+$headers=@{}
+$headers.Add("Accept", "application/json")
+$headers.Add("Authorization", "$apiKey")
+$headers.Add("x-xdr-auth-id", "19")
+$response = Invoke-RestMethod -Uri 'https://httpbin.org/headers' -Method GET -Headers $headers
+$response | ConvertTo-Json -Depth 10 | ForEach-Object { $_ }
+
