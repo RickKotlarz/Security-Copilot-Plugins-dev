@@ -58,3 +58,7 @@ Good prompts contain specific elements related to **Goal, Context, Source, and E
 | Using Entra, what is the MFA enrollment status for user: john.smith@contso.com |
 | Using Purview show the last 30 DLP alerts. For each user listed, provide a count of how many times they were included. |
 | Using Purview, provide a list of all users that triggered DLP alerts over the last 30 days. For each user, provide their UPN and a count of how many alerts they were associated with. |
+
+--- 
+
+✈️ Continue to [Module 2 - Standardizing Responses with Markdown](.././Module%202%20-%20Standardizing%20Responses%20with%20Markdown)
