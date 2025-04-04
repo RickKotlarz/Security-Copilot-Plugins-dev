@@ -18,34 +18,33 @@ The following module demonstrate effective prompt engineering for those just sta
 
 ### How Security Copilot works
 
-Regardless of whether your in the embedded or standalone experiences, Security Copilot prompts are evaluated by what's called the Orchestrator. The  Orchestrator's primary function is to interpret your prompt, check enabled plugins, then map the values of your prompt to the appropriate fields within one or more skills. As you can imagine, not including enough information in your prompts often leads to poor responses or no response at all. 
+Regardless of whether you're using the embedded or standalone experience, Security Copilot prompts are evaluated by the Orchestrator. The Orchestrator’s primary role is to interpret the prompt, check enabled plugins, and map values from the prompt to the appropriate fields within one or more skills. As you might expect, prompts that lack sufficient detail often result in poor or incomplete responses—or no response at all.
 
-Prompts within an embedded experience pre-select a given plugin for that embedded experience. If you're within a Purview DLP experience, asking questions about Intune or Defender will often fail to produce results or simply give incomplete responses.
+In the embedded experience, prompts are tied to a specific plugin based on the context. For example, if you're in a Purview DLP experience, asking questions about Intune or Defender will likely return no results or incomplete answers.
 
-However within the standalone experience, prompting supports all enabled plugins and leverages the existing security context of your current role. If you're a user with access to data within a given plugin, then associated plugins and skills within those plugins will allow you to recieve respones for those skills. If your existing security context doesn't permit you access, then prompts that offer access to that information will not be processed.
+In contrast, the standalone experience supports all enabled plugins and uses the existing security context of your role. If you have access to data in a specific plugin, the Orchestrator can use associated skills to provide a response. If your role lacks the necessary permissions, prompts requesting that information will not be processed.
 
 ### Prompting basics
 
-While the order of these isn't important, including them in your prompts definitely improves the outcome.
+While the order of these elements isn’t critical, including them in your prompts significantly improves the quality of the response.
 
 ![Image](./images/001_module1_basic_elements.png)
 
 ### Bad prompting
 
-Bad prompts contains vague and highly subjective elements related to **Goal, Context, Source, or Expectation**
+Bad prompts contain vague or highly subjective elements related to **Goal, Context, Source, or Expectation**
 
 | Bad prompt examples | Reasoning why they're bad |
 |--------|--------|
-| Show me important alerts. | The word "important" is highly subjective and results will vary greatly. |
-|  How’s my security posture? | Security posture could relate to a multitude of resources in the Security and Compliance stack. Additionally there is no plugin or skill that provides a total review of your security posture so asking this would result in a response based on missing information.|
-| How is my security posture from Defender looking today? Show results in a table. | Same as above |
-| What's the compliance status of this entity? | Compliance could relate to something in Intune, Purview, Entra, or otherwise. | 
-| Tell me the MFA status for device ASH-U2746 | Devices don't have a MFA status, so asking about this instead of the MFA status of the user who's currently or last logged in will fail to render an appropriate response. |
-| What's the MFA status for that user | Not including the actual named entity in a prompt will almost always lead to an error down the line. It's better to use a UPN, FQDN, Resource Object ID or another identifier that only exists as a single unique identifier within your organization. |
+| Show me important alerts. | Using the word "important" without clearly defining what it means to you can lead to widely varying results. |
+|  How is my security posture from Defender looking today? Show results in a table. | Security posture can refer to many different resources across the Security and Compliance stack. Since there is no single plugin or skill that provides a complete review, asking about overall security posture will result in a response based on incomplete information.
+| What's the compliance status of this entity? | Compliance could refer to areas within Intune, Purview, Entra, or other services, making the term too broad without additional context. | 
+| Tell me the MFA status for device ASH-U2746 | Devices do not have an MFA status. Asking about this, instead of the MFA status of the user currently or most recently logged in, will result in an inappropriate or failed response. |
+| What's the MFA status for that user | Not referring to a named entity by a unique identifier in a prompt will almost always result in errors. It’s best to use a UPN, FQDN, Resource Object ID, or another identifier that is guaranteed to be unique within your organization.|
 
 ### Good prompting
 
-Good prompts contains specefic elements related to **Goal, Context, Source, and Expectation**
+Good prompts contain specific elements related to **Goal, Context, Source, and Expectation**
 
 | Good prompt examples |
 |--------|
