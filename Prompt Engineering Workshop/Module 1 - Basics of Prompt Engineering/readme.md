@@ -34,8 +34,6 @@ While the order of these isn't important, including them in your prompts definit
 
 Bad prompts contains vague and highly subjective elements related to **Goal, Context, Source, or Expectation**
 
-**Bad examples prompts:**
-
 | Bad prompt examples | Reasoning why they're bad |
 |--------|--------|
 | Show me important alerts. | The word "important" is highly subjective and results will vary greatly. |
@@ -49,7 +47,6 @@ Bad prompts contains vague and highly subjective elements related to **Goal, Con
 
 Good prompts contains specefic elements related to **Goal, Context, Source, or Expectation**
 
-**Good example prompts:**
 | Good prompt examples |
 |--------|
 | Using the Defender XDR plugin, provide an SOC manager summary of all Defender incidents over the last 7 days |
