@@ -287,15 +287,17 @@ To make this process easily repeatable, I’ll create a Promptbook and ensure th
 
 ![Image](./images/009_module4_create_promptbook_part_1.png)
 
-Once the Promptbook window appears, I’ll enter an appropriate name, tags, and description. Notice that the "Plugins" section lists the plugin that was executed for this prompt. Before saving, I’ll edit the prompt by clicking the pencil icon in the top right corner of the prompt.
+Once the Promptbook window appears, I’ll enter an appropriate name, tags, and description. Notice that the `Plugins` section lists the `Get mailbox rules` plugin that was executed during the execution of this prompt. 
+
+Before saving, I’ll edit the prompt by clicking the pencil icon in the top right corner of the prompt.
 
 ![Image](./images/010_module4_create_promptbook_part_2.png)
 
-To edit the prompt, copy and remove `/GetMailboxRulesForAllUsers` from the top. Then, search for it in the Skills menu.
+Now I'll copy and remove `/GetMailboxRulesForAllUsers` from the top of this prompt followed by selecting the `Skills` menu icon.
 
 ![Image](./images/011_module4_create_promptbook_part_3.png)
 
-Once located, selecting the `GetMailboxRulesForAllUsers` skill will add it to the Promptbook
+I can either search for the `GetMailboxRulesForAllUsers` skill or simply scroll until until I find it. Once selected, the skill will be added to the Promptbook.
 
 ![Image](./images/012_module4_create_promptbook_part_4.png)
 
