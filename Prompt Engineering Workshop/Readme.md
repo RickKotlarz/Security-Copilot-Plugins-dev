@@ -3,17 +3,12 @@
 ![Security Copilot Logo](.././Images/ic_fluent_copilot_64_64%402x.png)
 
 Authors: Rick Kotlarz & Craig Freyman<br>
-Updated: 2025-April-3
+Updated: 2025-April-4
 
 ## Introduction
 
-These workshops are designed to help you quickly get up to speed with prompt engineering in Microsoft Security Copilot. Through hands-on examples, you'll learn best practices and how to use Markdown to craft effective prompts that improve how Security Copilot interprets instructions, reasons over data, and formats responses.
+These workshops are designed to help you quickly get up to speed with prompt engineering in Microsoft Security Copilot. Through hands-on examples, you’ll learn best practices and how to create effective prompts that improve how Security Copilot interprets instructions, analyzes data, and formats responses.
 
-## Recommendations
-
-It's highly recommended that you review the following two pages prior to starting these modules.
- - [Prompting in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/prompting-security-copilot)
- - [Create effective prompts](https://learn.microsoft.com/en-us/copilot/security/prompting-tips)
 
 ## Workshop Modules
 
