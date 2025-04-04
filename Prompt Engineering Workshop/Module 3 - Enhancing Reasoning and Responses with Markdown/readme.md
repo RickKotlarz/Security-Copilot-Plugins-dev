@@ -6,7 +6,7 @@ Authors: Rick Kotlarz & Craig Freyman<br>
 Updated: 2025-April-3
 
 #### ⌛ Estimated time to complete this lab: 30 minutes
-#### 🎓 Level: 250 (Intermediate)
+#### 🎓 Level: 300 (Intermediate)
 
 1. [Introduction](#introduction)
 2. [Large Language Model prompt engineering best practices](#large-language-model-prompt-engineering-best-practices)
