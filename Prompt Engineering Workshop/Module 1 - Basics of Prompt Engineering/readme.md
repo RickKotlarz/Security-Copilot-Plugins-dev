@@ -24,6 +24,10 @@ In the embedded experience, prompts are tied to a specific plugin based on the c
 
 In contrast, the standalone experience supports all enabled plugins and uses the existing security context of your role. If you have access to data in a specific plugin, the Orchestrator can use associated skills to provide a response. If your role lacks the necessary permissions, prompts requesting that information will not be processed.
 
+It's highly recommended that you review the following two pages prior to starting these modules.
+ - [Prompting in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/prompting-security-copilot)
+ - [Create effective prompts](https://learn.microsoft.com/en-us/copilot/security/prompting-tips)
+ 
 ### Prompting basics
 
 While the order of these elements isn’t critical, including them in your prompts significantly improves the quality of the response.
