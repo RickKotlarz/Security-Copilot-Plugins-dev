@@ -3,12 +3,12 @@
 ![Security Copilot Logo](../.././Images/ic_fluent_copilot_64_64%402x.png)
 
 Authors: Rick Kotlarz<br>
-Updated: 2025-April-3
+Updated: 2025-April-4
 
 #### ⌛ Estimated time to complete this lab: 15 minutes
 #### 🎓 Level: 100 (Beginner)
 
-The following module demonstrate effective prompt engineering for those just starting out with Security Copilot.
+The following module demonstrates effective prompt engineering for those just getting started with Security Copilot.
 
 1. [How Security Copilot works](#initial-prompt)
 2. [Prompting basics](#prompting-basics)
@@ -18,13 +18,13 @@ The following module demonstrate effective prompt engineering for those just sta
 
 ### How Security Copilot works
 
-Regardless of whether you're using the embedded or standalone experience, Security Copilot prompts are evaluated by the Orchestrator. The Orchestrator’s primary role is to interpret the prompt, check enabled plugins, and map values from the prompt to the appropriate fields within one or more skills. As you might expect, prompts that lack sufficient detail often result in poor or incomplete responses—or no response at all.
+Regardless of whether you're using the embedded or standalone experience, Security Copilot prompts are evaluated by the Orchestrator. The Orchestrator’s primary role is to interpret the prompt, check enabled plugins, and map values from the prompt to the appropriate fields within one or more skills. As you might expect, prompts that lack sufficient detail often result in poor or incomplete responses or no response at all.
 
 In the embedded experience, prompts are tied to a specific plugin based on the context. For example, if you're in a Purview DLP experience, asking questions about Intune or Defender will likely return no results or incomplete answers.
 
-In contrast, the standalone experience supports all enabled plugins and uses the existing security context of your role. If you have access to data in a specific plugin, the Orchestrator can use associated skills to provide a response. If your role lacks the necessary permissions, prompts requesting that information will not be processed.
+In contrast, the standalone experience supports all enabled plugins and allows you to pivot freely across plugins and skills. All prompts operate within the security context of your current role. If your role lacks the necessary permissions, prompts requesting that data will not be processed.
 
-It's highly recommended that you review the following two pages prior to starting these modules.
+It's strongly recommended that you review the following two links before starting these modules.
  - [Prompting in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/prompting-security-copilot)
  - [Create effective prompts](https://learn.microsoft.com/en-us/copilot/security/prompting-tips)
  
