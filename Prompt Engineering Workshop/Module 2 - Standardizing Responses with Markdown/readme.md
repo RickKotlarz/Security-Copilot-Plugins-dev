@@ -5,7 +5,7 @@
 Authors: Rick Kotlarz<br>
 Updated: 2025-April-4
 
-#### ⌛ Estimated time to complete this lab: 15 minutes
+#### ⌛ Estimated time to complete this lab: 30 minutes
 #### 🎓 Level: 200 (Beginner)
 
 1. [Introduction](#introduction)
@@ -132,4 +132,4 @@ All the Markdown formatting methods above include extra characters to help users
 
 ---
 
-✈️ Continue to [Module 3 - Enhancing Reasoning and Responses with Markdown](./Module%203%20-%20Enhancing%20Reasoning%20and%20Responses%20with%20Markdown)<br>
+✈️ Continue to [Module 3 - Enhancing Reasoning and Responses with Markdown](.././Module%203%20-%20Enhancing%20Reasoning%20and%20Responses%20with%20Markdown)<br>
