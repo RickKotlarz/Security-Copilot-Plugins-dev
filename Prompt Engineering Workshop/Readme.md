@@ -2,7 +2,7 @@
 
 ![Security Copilot Logo](.././Images/ic_fluent_copilot_64_64%402x.png)
 
-Authors: Rick Kotlarz
+Authors: Rick Kotlarz <br>
 Updated: 2025-April-4
 
 ## Introduction
