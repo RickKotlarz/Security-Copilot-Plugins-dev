@@ -10,9 +10,10 @@ Updated: 2025-April-3
 
 The following module demonstrate effective prompt engineering for those just starting out with Security Copilot.
 
-1. [How](#initial-prompt)
-2. [test](#test)
-3. [test](#test)
+1. [How Security Copilot works](#initial-prompt)
+2. [Prompting basics](#prompting-basics)
+3. [Bad prompting](#bad-prompting)
+4. [Good prompting](#good-prompting)
 
 
 ### How Security Copilot works
@@ -49,8 +50,6 @@ Bad prompts contains vague and highly subjective elements related to **Goal, Con
 | What's the compliance status of this entity? | Compliance could relate to something in Intune, Purview, Entra, or otherwise. | 
 | Tell me the MFA status for device ASH-U2746 | Devices don't have a MFA status, so asking about this instead of the MFA status of the user who's currently or last logged in will fail to render an appropriate response. |
 | What's the MFA status for that user | Not including the actual named entity in a prompt will almost always lead to an error down the line. It's better to use a UPN, FQDN, Resource Object ID or another identifier that only exists as a single unique identifier within your organization. |
-
-
 
 ### Good prompting
 
