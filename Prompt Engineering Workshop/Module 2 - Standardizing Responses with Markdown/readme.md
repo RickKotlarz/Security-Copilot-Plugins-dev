@@ -43,7 +43,7 @@ Running a prompt without specifying output expectations can lead to inconsistent
 List the last 3 incidents from Defender.
 ```
 
-![Image](./images/001_module2_initial_prompt_no_Markdown.png)
+![Image](./images/001_prompt_no_Markdown.png)
 
 ### Formatting as a table with AskGPT
 
