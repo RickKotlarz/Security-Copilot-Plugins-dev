@@ -11,8 +11,8 @@ Updated: 2025-April-4
 1. [Introduction](#introduction)
 2. [What is Markdown and why use it](#what-is-markdown-and-why-use-it)
 3. [Initial prompt](#initial-prompt)
-4. [Formatting as a table with AskGPT](#formatting-as-a-table-with-askgpt)
-5. [Formatting as a list with AskGPT](#formatting-as-a-list-with-askgpt)
+4. [Formatting as a table](#formatting-as-a-table)
+5. [Formatting as a list](#formatting-as-a-list)
 6. [Combining a prompt with Markdown formatting instructions](#combining-a-prompt-with-markdown-formatting-instructions)
 7. [Available Markdown](#available-markdown)
 8. [Increasing efficiency](#increasing-efficiency)
@@ -45,9 +45,11 @@ List the last 3 incidents from Defender.
 
 ![Image](./images/001_prompt_no_Markdown.png)
 
-### Formatting as a table with AskGPT
+### Formatting as a table
 
-To modify the default output, we can use the /AskGPT skill and instruct the model to take no action other than reading the instructions. Then, specify that subsequent outputs should follow the provided Markdown format. Keep in mind that this will not reformat existing results; the instruction must be set **before** the prompt for which you want to change the output format.
+The /AskGPT skill bypasses plugins and interacts directly with the underlying LLM. We can use it to provide instructions that modify the default output format. Since we'll be submitting follow-up prompts, start by instructing it to take no action except to read the instructions. Then, specify that all subsequent outputs should follow the provided Markdown format.
+
+Note that this will not reformat existing results the instruction must be given **before** the prompt you want to affect.
 
 ```
 /AskGPT No action is needed at this time, simply review the following instructions and respond with 'Ready!'. Instructions: All additional responses will be formatted to conform to the following Markdown example.
@@ -67,7 +69,7 @@ Notice that re-running the [Initial prompt](#initial-prompt) now results with th
 
 ![Image](./images/003_module2_AskGPT_formatting_as_a_table_prompt.png)
 
-### Formatting as a list with AskGPT
+### Formatting as a list
 
 Another example of Markdown formatting is shown below, using bullets, indentations, and a horizontal bar after each incident. In this example, the "Assigned To," "Classification," and "Determination" fields have been excluded from the formatted output by removing them from the Markdown example.
 ```
