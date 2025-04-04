@@ -6,7 +6,7 @@ Authors: Rick Kotlarz<br>
 Updated: 2025-April-3
 
 #### ⌛ Estimated time to complete this lab: 30 minutes
-#### 🎓 Level: 300 (Intermediate)
+#### 🎓 Level: 300 (Advanced)
 
 1. [Prerequisites](#prerequisites)
 2. [Introduction](#introduction)
@@ -293,7 +293,7 @@ Once the Promptbook window appears, I’ll enter an appropriate name, tags, and 
 
 To edit the prompt, copy and remove `/GetMailboxRulesForAllUsers` from the top. Then, search for it in the Skills menu.
 
-![Image](./impages/011_module4_create_promptbook_part_3.png)
+![Image](./images/011_module4_create_promptbook_part_3.png)
 
 Once located, selecting the `GetMailboxRulesForAllUsers` skill will add it to the Promptbook
 
