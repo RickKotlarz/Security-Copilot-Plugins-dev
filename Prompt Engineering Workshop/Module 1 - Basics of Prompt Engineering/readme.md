@@ -31,28 +31,36 @@ Basic elements of an effective prompt within Security Copilot include:
 3. Source - known information, data sources, plugins or skills that Security Copilot should use
 4. Expectations - format or target audience you want the response tailored to (if relevant)
 
-While the order of these isn't important, including them is.
+While the order of these isn't important, including them in your prompts definitely improves the outcome.
 
-Example of a good prompt:
-Provide a summary of incident 54321 for a report that I can submit to my manager. Look in Defender incidents. Compile the information in a list, with a short summary at the end.
-
-![Image](./images/001_prompt_no_Markdown.png)
+![Image](./images/001_module1_basic_elements.png)
 
 ### Bad prompting
 
 Bad prompts contains vague and highly subjective elements related to **Goal, Context, Source, or Expectation**
 
 **Bad examples prompts:**
- - Prompt: Show me important alerts.
-  - Result: Important is highly subjective and results will vary greatly
- - Prompt: How’s my security posture?
-  - Result: Security posture could relate to a multitude of resources and there is no skill that provides a total review of your security posture.
- - How is my security posture from Defender looking today? Show results in a table.
- - What's the compliance status of this entity?
- - Tell me the MFA status for
+
+| Prompt | Reasoning |
+|--------|--------|
+| Show me important alerts. | The word "important" is highly subjective and results will vary greatly. |
+|  How’s my security posture? | Security posture could relate to a multitude of resources in the Security and Compliance stack. Additionally there is no plugin or skill that provides a total review of your security posture so asking this would result in a response based on missing information.|
+| How is my security posture from Defender looking today? Show results in a table. | Same as above |
+| What's the compliance status of this entity? | Compliance could relate to something in Intune, Purview, Entra, or otherwise. | 
+| Tell me the MFA status for device ASH-U2746 | Devices don't have a MFA status, so asking about this instead of the MFA status of the user who's currently or last logged in will fail to render an appropriate response. |
+| What's the MFA status for that user | Not including the actual named entity in a prompt will almost always lead to an error down the line. It's better to use a UPN, FQDN, Resource Object ID or another identifier that only exists as a single unique identifier within your organization. |
+
+
 
 ### Good prompting
-Contains specific [Goal + Context + Source + Expectation] elements
-Good example prompts
-Using the Defender XDR plugin, provide an SOC manager summary of all Defender incidents over the last 7 days. 
 
+Good prompts contains specefic elements related to **Goal, Context, Source, or Expectation**
+
+**Good example prompts:**
+| Prompt |
+|--------|
+| Using the Defender XDR plugin, provide an SOC manager summary of all Defender incidents over the last 7 days |
+| Using NL2KQL for Defender, show me a list of alerts with 'phish' in the title for the last 30 days |
+| Using Intune, provide a table showing the last 3 devices that were enrolled and their Operating System |
+| Using Intune, show me devices that haven't checked in over the last 60 days |
+| Using Entra, what is the MFA enrollment status for user: john.smith@contso.com |
