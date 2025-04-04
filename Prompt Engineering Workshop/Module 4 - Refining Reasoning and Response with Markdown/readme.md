@@ -287,7 +287,7 @@ To make this process easily repeatable, I’ll create a Promptbook and ensure th
 
 ![Image](./images/009_module4_create_promptbook_part_1.png)
 
-Once the Promptbook window appears, I’ll enter an appropriate name, tags, and description. Notice that the "Plugins" section lists the plugin that was executed for this prompt. Before saving, I’ll edit the prompt by clicking the pencil icon in the top right corner of Prompt 1.
+Once the Promptbook window appears, I’ll enter an appropriate name, tags, and description. Notice that the "Plugins" section lists the plugin that was executed for this prompt. Before saving, I’ll edit the prompt by clicking the pencil icon in the top right corner of the prompt.
 
 ![Image](./images/010_module4_create_promptbook_part_2.png)
 
