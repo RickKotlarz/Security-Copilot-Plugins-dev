@@ -41,7 +41,7 @@ Bad prompts contains vague and highly subjective elements related to **Goal, Con
 
 **Bad examples prompts:**
 
-| Prompt | Reasoning |
+| Bad prompt examples | Reasoning why they're bad |
 |--------|--------|
 | Show me important alerts. | The word "important" is highly subjective and results will vary greatly. |
 |  How’s my security posture? | Security posture could relate to a multitude of resources in the Security and Compliance stack. Additionally there is no plugin or skill that provides a total review of your security posture so asking this would result in a response based on missing information.|
@@ -57,7 +57,7 @@ Bad prompts contains vague and highly subjective elements related to **Goal, Con
 Good prompts contains specefic elements related to **Goal, Context, Source, or Expectation**
 
 **Good example prompts:**
-| Prompt |
+| Good prompt examples |
 |--------|
 | Using the Defender XDR plugin, provide an SOC manager summary of all Defender incidents over the last 7 days |
 | Using NL2KQL for Defender, show me a list of alerts with 'phish' in the title for the last 30 days |
