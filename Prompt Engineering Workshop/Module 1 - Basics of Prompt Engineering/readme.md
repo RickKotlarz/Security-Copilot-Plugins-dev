@@ -26,12 +26,6 @@ However within the standalone experience, prompting supports all enabled plugins
 
 ### Prompting basics
 
-Basic elements of an effective prompt within Security Copilot include:
-1. Goal - specific, security-related information that you need
-2. Context - why you need this information or how you plan to use it
-3. Source - known information, data sources, plugins or skills that Security Copilot should use
-4. Expectations - format or target audience you want the response tailored to (if relevant)
-
 While the order of these isn't important, including them in your prompts definitely improves the outcome.
 
 ![Image](./images/001_module1_basic_elements.png)
@@ -61,5 +55,6 @@ Good prompts contains specefic elements related to **Goal, Context, Source, or E
 | Using the Defender XDR plugin, provide an SOC manager summary of all Defender incidents over the last 7 days |
 | Using NL2KQL for Defender, show me a list of alerts with 'phish' in the title for the last 30 days |
 | Using Intune, provide a table showing the last 3 devices that were enrolled and their Operating System |
-| Using Intune, show me devices that haven't checked in over the last 60 days |
 | Using Entra, what is the MFA enrollment status for user: john.smith@contso.com |
+| Using Purview show the last 30 DLP alerts. For each user listed, provide a count of how many times they were included. |
+| Using Purview, provide a list of all users that triggered DLP alerts over the last 30 days. For each user, provide their UPN and a count of how many alerts they were associated with. |
