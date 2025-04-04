@@ -45,7 +45,7 @@ Bad prompts contains vague and highly subjective elements related to **Goal, Con
 
 ### Good prompting
 
-Good prompts contains specefic elements related to **Goal, Context, Source, or Expectation**
+Good prompts contains specefic elements related to **Goal, Context, Source, and Expectation**
 
 | Good prompt examples |
 |--------|
