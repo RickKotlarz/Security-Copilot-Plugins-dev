@@ -16,9 +16,9 @@ Note this is a work in progress and these 3 skills are meant to serve as a start
 
 #### Utlization of the plugin:
 
-- **X-GetAllDashboardDetails** Get all dashboards details
-- **X-GetDashboardDetails** Get details for specefic dashboard
-- **X-GetIncident** Get a specific incident
+- **X-GetIncident** - Gets a specific incident
+- **X-GetAllDashboardDetails** - Gets all dashboards details
+- **X-GetDashboardDetails** - Gets details for specefic dashboard
 
 
 [Swagger documentation reference](https://swagger.io/docs/specification/v3_0/authentication/)
