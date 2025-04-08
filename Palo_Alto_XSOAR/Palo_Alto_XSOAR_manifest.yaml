@@ -25,4 +25,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Copilot-for-Security-Plugins/refs/heads/main/Palo_Alto_XSOAR/Palo_Alto_XSOAR_template_OAPI.yam
+      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Security-Copilot-Plugins-dev/refs/heads/main/Palo_Alto_XSOAR/Palo_Alto_XSOAR_template_OAPI.yaml
