@@ -18,4 +18,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Copilot-for-Security-Plugins//main/Amit-MSGraph_group_memberships_and_license/Access_Reviews_API_plugin-OAPI-v2.yaml
+      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Security-Copilot-Plugins-dev/refs/heads/main/Amit-MSGraph_group_memberships_and_license/Access_Reviews_API_plugin-OAPI-v2.yaml
