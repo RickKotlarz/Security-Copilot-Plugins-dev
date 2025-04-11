@@ -39,7 +39,7 @@ foreach ($resource in $resources | ConvertFrom-Json) {
 }
 
 # Display the results in a table format
-$resourceDetailsList | Format-Table -Property ResourceGroup, ResourceName, ResourceProviderType, NumberOfUnits, OverageState, OverageAmount, CrossGeoCompute, GeoLocation, Geo, ApiVersion
+$resourceDetailsList | Format-Table -Property ResourceGroup, ResourceName, ResourceProviderType, NumberOfUnits, OverageState, OverageAmount, CrossGeoCompute, Geo, ApiVersion
 
 ```
 Output should appear as...
