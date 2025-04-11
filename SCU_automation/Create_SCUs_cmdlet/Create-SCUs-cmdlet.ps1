@@ -1,12 +1,11 @@
-# Create SCUs via NewAzResource cmdlet
+$resourceName = "SCU-from-Azure-shell"
+$resourceGroupName = "SCU-demo-RG"
+$resourceType = "microsoft.securitycopilot/capacities"
+$numberOfSCUs = 1 ### base line number of SCUs
+$overageState = "Limited" ### "Unlimited"
+$overageAmount = 2 ### not needed if overage state is unlimited
+$geoLocation = "eastus" ### "westeurope"
+$geo = "US" ### "EU"
+$crossGeo = "NotAllowed" ### "Allowed"
 
-$resourceName = "SecurityCopilotSCU"
-$resourceGroupName = "SecurityCopilot"
-$numberOfSCUs = 1
-$geoLocation = "westeurope"
-$geo = "EU"
-$crossGeo = "NotAllowed"
-$apiVersion = "2023-12-01-preview"
-
-New-AzResource -ResourceName $resourceName -ResourceType "Microsoft.SecurityCopilot/capacities" -ResourceGroupName $resourceGroupName -Location $geoLocation -ApiVersion "2023-12-01-preview" -Properties @{numberOfUnits=$numberOfSCUs; crossGeoCompute=$crossGeo; geo=$geo}
-
+New-AzResource -ResourceName $resourceName -ResourceType $resourceType  -ResourceGroupName $resourceGroupName -Location $geoLocation -Properties @{numberOfUnits=$numberOfSCUs; overageState=$overageState; crossGeoCompute=$crossGeo; geo=$geo}
