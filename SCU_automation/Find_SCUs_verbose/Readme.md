@@ -30,14 +30,17 @@ foreach ($resource in $resources | ConvertFrom-Json) {
         ResourceGroup      = $resource.ResourceGroup
         ResourceProviderType = $resource.ResourceProviderType
         NumberOfUnits      = $resourceJson.properties.numberOfUnits
+        OverageState       = $resourceJson.properties.overageState
+        OverageAmount      = $resourceJson.properties.overageAmount
         CrossGeoCompute    = $resourceJson.properties.crossGeoCompute
+        GeoLocation        = $resourceJson.properties.geoLocation
         Geo                = $resourceJson.properties.geo
         ApiVersion         = $apiVersion
     }
 }
 
 # Display the results in a table format
-$resourceDetailsList | Format-Table -Property ResourceGroup, ResourceName, ResourceProviderType, NumberOfUnits, CrossGeoCompute, Geo, ApiVersion
+$resourceDetailsList | Format-Table -Property ResourceGroup, ResourceName, ResourceProviderType, NumberOfUnits, OverageState, OverageAmount, CrossGeoCompute, GeoLocation, Geo, ApiVersion
 
 ```
 Output should appear as...
