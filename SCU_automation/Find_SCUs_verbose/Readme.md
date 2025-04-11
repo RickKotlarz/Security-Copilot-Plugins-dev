@@ -43,4 +43,4 @@ $resourceDetailsList | Format-Table -Property ResourceGroup, ResourceName, Resou
 
 ```
 Output should appear as...
-![Azure Portal Showing SCU location](https://github.com/RickKotlarz/Copilot-for-Security-Plugins/blob/main/SCU_automation/Find_SCUs_verbose/Find-SCU-verbose-results.png)
+![Azure Portal Showing SCU location](https://github.com/RickKotlarz/Copilot-for-Security-Plugins/blob/main/SCU_automation/Find_SCUs_verbose/Find-SCU-verbose-results_v2.png)
