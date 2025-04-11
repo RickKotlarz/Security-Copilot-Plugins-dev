@@ -13,4 +13,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Copilot-for-Security-Plugins/refs/heads/main/VirusTotal/VirusTotal_plugin_OAPI.yaml
+      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Security-Copilot-Plugins-dev/refs/heads/main/VirusTotal/VirusTotal_plugin_OAPI.yaml
