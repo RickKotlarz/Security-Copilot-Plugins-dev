@@ -45,4 +45,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Copilot-for-Security-Plugins/refs/heads/main/MDE_Exclusions_Defender_API/MDE_exclusion_plugin.yaml
+      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Security-Copilot-Plugins-dev/refs/heads/main/MDE_Exclusions_Defender_API/MDE_exclusion_plugin.yaml
