@@ -33,7 +33,6 @@ foreach ($resource in $resources | ConvertFrom-Json) {
         OverageState       = $resourceJson.properties.overageState
         OverageAmount      = $resourceJson.properties.overageAmount
         CrossGeoCompute    = $resourceJson.properties.crossGeoCompute
-        GeoLocation        = $resourceJson.properties.geoLocation
         Geo                = $resourceJson.properties.geo
         ApiVersion         = $apiVersion
     }
