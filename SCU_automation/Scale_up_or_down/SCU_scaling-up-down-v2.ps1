@@ -2,9 +2,12 @@ $subscription = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 $resourceGroup = "copilot-for-security-demo"
 $resourceName = "cop-prod-useast"
 $resourceType = "microsoft.securitycopilot/capacities"
+$numberOfSCUs = 1 ### base line number of SCUs
+$overageAmount = 2 ### not needed if overage state is unlimited
 
 Connect-AzAccount -Identity
 Set-AzContext -Subscription $subscription
-$Resource = Get-AzResource -ResourceGroupName $resourceGroup -ResourceName $resourceName -ResourceType $resourceType
-$Resource.Properties.numberOfUnits = 1
-$Resource | Set-AzResource -Force
+$resource = Get-AzResource -ResourceGroupName $resourceGroup -ResourceName $resourceName -ResourceType $resourceType
+$resource.Properties.numberOfUnits = $numberOfSCUs
+$resource.Properties.overageAmount = $overageAmount
+$resource | Set-AzResource -Force
