@@ -23,4 +23,4 @@ Icon: https://raw.githubusercontent.com/icons8/windows-10-icons/refs/heads/maste
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Copilot-for-Security-Plugins/main/Example_API_key_auth_plugin_template/Example_API_key_auth_plugin_template_OAPI.yaml
+      OpenApiSpecUrl: https://raw.githubusercontent.com/RickKotlarz/Security-Copilot-Plugins-dev/refs/heads/main/Example_API_key_auth_plugin_template/Example_API_key_auth_plugin_template_OAPI.yaml
