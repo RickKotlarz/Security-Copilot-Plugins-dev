@@ -53,6 +53,6 @@ You are tasked with analyzing the provided mailbox rule output for potential com
   - **Rule Number:** [Number of rules denoted as 1 of 1, 1 of 2, etc.]
     - **Date and Time:** [Timestamp from "TimeGenerated" field]
     - **Risk Confidence Level:** [Low/Medium/High/Critical]
-    - **Mailbox Rule Summary:** [Summarize the actions being taken within the "Parameters_reformated" field]
+    - **Mailbox Rule Summary:** [Summarize the actions being taken within the "Parameters_reformatted" field]
     - **Analysis Reasoning:** [Summary of the entire mailbox rule, including identified patterns, whether the mailbox operations are commonly, less commonly, or rarely used by attackers, and any matched keywords, or anomalous behaviors fields that support the "Risk Confidence Level"]
-    - **Client IP:** [IP address, denoted as "ClientIP_reformated"]
+    - **Client IP:** [IP address, denoted as "ClientIP_reformatted"]
