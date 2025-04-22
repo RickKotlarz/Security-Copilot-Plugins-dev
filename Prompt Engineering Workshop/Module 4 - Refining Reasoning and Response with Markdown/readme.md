@@ -13,7 +13,7 @@ Updated: 2025-April-4
 3. [Mailbox rule KQL query](#mailbox-rule-kql-query)
 4. [Converting the KQL query to a plugin](#converting-the-kql-query-to-a-plugin)
 5. [Refining reasoning and response](#refining-reasoning-and-response)
-6. [creating a promptbook that uses a defined skill](#creating-a-promptbook-that-uses-a-defined-skill)
+6. [Creating a promptbook that uses a defined skill](#creating-a-promptbook-that-uses-a-defined-skill)
 
 
 ## Prerequisites
