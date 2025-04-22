@@ -51,7 +51,7 @@ OfficeActivity
 // Operations more commonly used by attackers: "Add-MailboxPermission", "New-InboxRule", "Set-InboxRule"
 // Noisy Operations less commonly used by attackers: "Set-Mailbox", "New-TransportRule", "Set-TransportRule"
 // Noisy Operations rarely used by attackers: "Add-MailboxPermission", "New-ManagementRoleAssignment"
-| extend Parameters_reformated = replace(@"\[|\]", "", tostring(Parameters)) // Remove square brackets from Parameters field to ensure propper JSON formatting
+| extend Parameters_reformated = replace(@"\[|\]", "", tostring(Parameters)) // Remove square brackets from Parameters field to ensure proper JSON formatting
 | extend ClientIP_reformated = replace(@"\[|\]", "", tostring(extract("^(.*):.*$", 1, ClientIP))) // Drop everything after the last colon and remove square brackets on IPv6 addresses
 | project TimeGenerated, UserId, Operation, Parameters_reformated, ClientIP_reformated
 ```
@@ -113,7 +113,7 @@ SkillGroups:
             // Operations more commonly used by attackers: "Add-MailboxPermission", "New-InboxRule", "Set-InboxRule"
             // Noisy Operations less commonly used by attackers: "Set-Mailbox", "New-TransportRule", "Set-TransportRule"
             // Noisy Operations rarely used by attackers: "Add-MailboxPermission", "New-ManagementRoleAssignment"
-            | extend Parameters_reformated = replace(@"\[|\]", "", tostring(Parameters)) // Remove square brackets from Parameters field to ensure propper JSON formatting
+            | extend Parameters_reformated = replace(@"\[|\]", "", tostring(Parameters)) // Remove square brackets from Parameters field to ensure proper JSON formatting
             | extend ClientIP_reformated = replace(@"\[|\]", "", tostring(extract("^(.*):.*$", 1, ClientIP))) // Drop everything after the last colon and remove square brackets on IPv6 addresses
             | project TimeGenerated, UserId, Operation, Parameters_reformated, ClientIP_reformated
 ```
