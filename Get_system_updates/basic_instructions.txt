@@ -7,7 +7,3 @@ Output the results in a table.
 Note that I'm only interested in the fields that return the 'Computer', 'Product', 'ResourceGroup', and 'OSFullName'.
 
 After creating that table then a list of items that I should prioritize first and a reason why.
-
-====
-Prompt Generator - AI Foundry v3
-Generates a well written prompt using LLM prompt engineering best practices.
