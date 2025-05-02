@@ -1,6 +1,6 @@
 # Monitoring and troubelshooting Security Copilot
 
-### Get Security Copilot logs - Requires Defender for Cloud CloudAppEvents
+### Get Security Copilot logs - Requires Defender for Cloud to use the CloudAppEvents table
 ```
 let recordTypeLookup = datatable(RecordType:int, PurviewAuditRecordType:string)
 [
