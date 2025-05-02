@@ -42,7 +42,7 @@ Usage
 | summarize by DataType, IsBillable
 ```
 
-#### Monitoring Security Copilot
+## Monitoring Security Copilot
 
 
 ### Get Security Copilot logs - Requires Defender for Cloud CloudAppEvents
@@ -150,7 +150,7 @@ MicrosoftGraphActivityLogs
             | limit 100
 ```
 
-#### Sentinel / Defender alert coorelation queries
+## Sentinel / Defender alert coorelation queries
 
 ### Get alerts from various Microsoft products
 ```
