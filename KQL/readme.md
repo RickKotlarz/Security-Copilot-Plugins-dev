@@ -143,7 +143,7 @@ SecurityIncident
 ```
 
 ### SecurityIncident - Incident table for Defender, Sentinel and other products
-// [https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident)
+[https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident)
 ```
 SecurityIncident
 | take 4
@@ -164,7 +164,7 @@ AlertEvidence
 ```
 
 ### AlertInfo - Not very useful...
-Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity
+Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity </br>
 [https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo)
 ```
 AlertInfo
