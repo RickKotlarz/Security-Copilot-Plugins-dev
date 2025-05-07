@@ -1,3 +1,5 @@
+## I don't reccomend using this plugin as it needs to be rewored for OpenAPI spec 3.0.1. 
+
 ### VirusTotal Custom Plugin V3 (Updated Sept-2024)
 
 Welcome to the VirusTotal custom plugin! Here, you'll discover a suite of features designed to empower your malware analysis and threat intelligence efforts:
