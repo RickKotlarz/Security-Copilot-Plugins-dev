@@ -82,29 +82,34 @@ arg("").resourcechanges
 ### Shows the API GET/POST activity for Graph API related to Security Copilot
 ```
 MicrosoftGraphActivityLogs
-            //| where TimeGenerated > ago({{timeframe}})
-            //| where Scopes contains "{{apipermissionscope}}""
-            //| where RequestMethod == "POST" // Only API calls initiated by plugins or Logic Apps
-            | where UserAgent contains "MicrosoftCopilotforSecurity" 
-            //or UserAgent contains "azure-logic-apps"
-            | where isnotempty(UserId)
-            | join kind=inner (
-                IdentityInfo
-                | where TimeGenerated > ago(30d)
-                | summarize arg_max(TimeGenerated, *) by AccountObjectId
-                | project UserId=AccountObjectId
-            ) on UserId
-            | project-away UserId1
-            | extend GeoIPInfo = geo_info_from_ip_address(IPAddress)
-            | extend country = tostring(parse_json(GeoIPInfo).country),
-                     state = tostring(parse_json(GeoIPInfo).state),
-                     city = tostring(parse_json(GeoIPInfo).city),
-                     latitude = todouble(parse_json(GeoIPInfo).latitude),
-                     longitude = todouble(parse_json(GeoIPInfo).longitude)
-            | project TimeGenerated, country, state, city, latitude, longitude, ApiVersion, RequestMethod, ResponseStatusCode, IPAddress, UserAgent, RequestUri, UserId, Scopes
-            | limit 100
+//| where TimeGenerated > ago({{timeframe}})
+//| where Scopes contains "{{apipermissionscope}}""
+//| where RequestMethod == "POST" // Only API calls initiated by plugins or Logic Apps
+| where UserAgent contains "MicrosoftCopilotforSecurity" 
+//or UserAgent contains "azure-logic-apps"
+| where isnotempty(UserId)
+| join kind=inner (
+    IdentityInfo
+    | where TimeGenerated > ago(30d)
+    | summarize arg_max(TimeGenerated, *) by AccountObjectId
+    | project UserId=AccountObjectId
+) on UserId
+| project-away UserId1
+| extend GeoIPInfo = geo_info_from_ip_address(IPAddress)
+| extend country = tostring(parse_json(GeoIPInfo).country),
+         state = tostring(parse_json(GeoIPInfo).state),
+         city = tostring(parse_json(GeoIPInfo).city),
+         latitude = todouble(parse_json(GeoIPInfo).latitude),
+         longitude = todouble(parse_json(GeoIPInfo).longitude)
+| project TimeGenerated, country, state, city, latitude, longitude, ApiVersion, RequestMethod, ResponseStatusCode, IPAddress, UserAgent, RequestUri, UserId, Scopes | limit 100
 ```
 
+### Shows Security Copilot Security Compute Unit changes within the AzureActivity table
+```
+AzureActivity  
+| where TimeGenerated >= ago(30d)
+| where ResourceProviderValue contains "SECURITYCOPILOT"
+```
 ---
 
 # Sentinel / Defender alert coorelation queries
