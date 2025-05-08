@@ -188,7 +188,7 @@ DeviceNetworkInfo
 
 ### Searches for a string and shows the distint tables where thatls lcoated
 ```
-search "Disable 'Always install with elevated privileges'"
+search "Disable \'Always install with elevated privileges\'"
 | distinct $table
 ```
 
