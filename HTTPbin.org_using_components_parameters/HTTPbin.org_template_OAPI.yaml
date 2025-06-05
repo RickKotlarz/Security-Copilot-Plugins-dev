@@ -4,7 +4,7 @@
 openapi: 3.0.1
 
 info:
-  title: httpbin.org - V2
+  title: httpbin.org
   description: A simple HTTP Request & Response Service.
   descriptionForModel: A simple HTTP Request & Response Service.
   # descriptionForModel: A verbose and detailed description to help the model select this skil over other skills.
