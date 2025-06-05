@@ -1,14 +1,14 @@
 # Author Rick Kotlarz
 # Plugin updated 2025-Jan-08
 
-openapi: 3.0.0
+openapi: 3.0.1
 
 info:
   title: httpbin.org
   description: A simple HTTP Request & Response Service.
   descriptionForModel: A simple HTTP Request & Response Service.
   # descriptionForModel: A verbose and detailed description to help the model select this skil over other skills.
-  version: "0.9.16"
+  version: "0.9.17"
 
 servers:
   - url: https://httpbin.org/
@@ -16,7 +16,7 @@ servers:
 paths:
   /headers:
     get:
-      operationId: TestApiKeyAuth
+      operationId: TestApiKeyAuth-V2
       summary: Returns the provided headers
       parameters:
         - $ref: '#/components/parameters/x-xdr-auth-id'
