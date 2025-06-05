@@ -4,7 +4,7 @@
 Descriptor:
   Name: HTTPbin.org Example
   DisplayName: httpbin.org - API Key Authentication
-  Description: Plugin example for making example http requests - v0.9.17
+  Description: Plugin example for making example http requests - v0.9.18
   DescriptionForModel: Plugin example for making example http requests
 
 #  Settings:
