@@ -1,0 +1,48 @@
+Descriptor:
+  Name: PluginForTesting-v1
+  DisplayName: Plugin for testing various KQL tables
+  Description: Plugin for testing various KQL tables
+  DescriptionForModel: Plugin for testing various KQL tables
+
+  SupportedAuthTypes:
+    - None
+    
+SkillGroups:
+  - Format: KQL
+    Skills:
+
+      - Name: Test-CloudAppEvents-v1
+        DisplayName: Test-CloudAppEvents-v1
+        Description: Test-CloudAppEvents-v1
+        DescriptionForModel: Test-CloudAppEvents-v1
+        ExamplePrompts:
+          - Test-CloudAppEvents-v1
+        Settings:
+          Target: Defender
+          Template: |-
+            CloudAppEvents
+            | take 2
+
+      - Name: Test-AlertEvidence-v1
+        DisplayName: Test-AlertEvidence-v1
+        Description: Test-AlertEvidence-v1
+        DescriptionForModel: Test-AlertEvidence-v1
+        ExamplePrompts:
+          - Test-AlertEvidence-v1
+        Settings:
+          Target: Defender
+          Template: |-
+            AlertEvidence
+            | take 2
+            
+      - Name: Test-SigninLogs-v1
+        DisplayName: Test-SigninLogs-v1
+        Description: Test-SigninLogs-v1
+        DescriptionForModel: Test-SigninLogs-v1
+        ExamplePrompts:
+          - Test-SigninLogs-v1
+        Settings:
+          Target: Defender
+          Template: |-
+            SigninLogs
+            | take 2
