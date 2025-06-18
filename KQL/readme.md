@@ -180,7 +180,7 @@ SecurityAlert
 ```
 
 ### AlertInfo - Not very useful...
-Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity </br>
+Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity <br/>
 [https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo)
 ```
 AlertInfo
@@ -234,3 +234,8 @@ Usage
 | where IsBillable == false
 | summarize by DataType, IsBillable
 ```
+
+---
+
+Some tips, tricks and examples for using KQL for Microsoft Sentinel. <br/>
+[https://github.com/reprise99/Sentinel-Queries](https://github.com/reprise99/Sentinel-Queries)
