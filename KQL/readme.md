@@ -168,6 +168,17 @@ AlertEvidence
 | take 4
 ```
 
+### Look up alerts for a Sentinel Security incident using SecurityIncident and SecurityAlert tables
+```
+let targetIncident = SecurityIncident
+    | where IncidentNumber == 12345 // Change with Sentinel incident ID
+    | project AlertIds
+    | mv-expand AlertIds;
+SecurityAlert
+| where TimeGenerated >= ago(30d) // Change with timeframe for alerts or comment out to query all alerts.
+| where SystemAlertId in (targetIncident)
+```
+
 ### AlertInfo - Not very useful...
 Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity </br>
 [https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo)
