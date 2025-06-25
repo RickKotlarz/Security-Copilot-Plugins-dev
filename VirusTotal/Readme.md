@@ -1,4 +1,4 @@
-## I don't reccomend using this plugin as it needs to be rewored for OpenAPI spec 3.0.1. 
+## I don't reccomend using this plugin as it it needs to be updated for OpenAPI spec 3.0.1. 
 
 ### VirusTotal Custom Plugin V3 (Updated Sept-2024)
 
